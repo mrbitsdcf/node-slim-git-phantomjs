@@ -1,7 +1,7 @@
 FROM node:9-slim
 LABEL "Maintainer"="MrBiTs"
 LABEL "e-mail"="mrbits.dcf@gmail.com"
-LABEL "version"="0.0.7"
+LABEL "version"="0.0.8"
 
 RUN sed -i '/deb http:\/\/deb.debian.org\/debian jessie-updates main/d' /etc/apt/sources.list
 RUN apt-get -o Acquire::Check-Valid-Until=false update && apt-get -y install git wget bzip2 python python-pip build-essential
